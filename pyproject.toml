@@ -1,0 +1,24 @@
+[project]
+name = "CVDVMIP"
+version = "0.1"
+description = "Using CV-DV quantum system to solve Mixed-integer programming"
+authors = [
+    {name = "Debin Xiang", email = "db.xiang@zju.edu.cn"},
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "qutip",
+    "matplotlib",
+    "sympy",
+    "ipykernel>=6.29.5",
+    "pandas>=2.0.3",
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["cvIP"]  # 只包含 qram 包
